@@ -11,18 +11,15 @@ import java.util.Scanner;
  *
  * @author Wynter
  */
-public class Es_03 {
-
+public class Es_05 {
     public static void main(String[] args) {
         Scanner NN = new Scanner(System.in);
-
+        
         System.out.print("Número 01: ");
-        double n1 = NN.nextDouble();
-        System.out.print("Número 02: ");
-        double n2 = NN.nextDouble();
+        double n1 = NN.nextInt();
 
-        double n3 = (Math.pow(n1, 2)) + (Math.pow(n2, 2));
-
-        System.out.println(n3);
+        double area = Math.pow(n1,2);
+        
+        System.out.println("área: "+area);
     }
 }

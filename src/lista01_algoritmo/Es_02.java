@@ -16,9 +16,9 @@ public class Es_02 {
         Scanner NN = new Scanner(System.in);
         
         System.out.print("Número 01: ");
-        double n1 = NN.nextInt();
+        double n1 = NN.nextDouble();
         System.out.print("Número 02: ");
-        double n2 = NN.nextInt();
+        double n2 = NN.nextDouble();
         
         double n3 = Math.pow(n1, n2);
         
