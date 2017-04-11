@@ -17,14 +17,14 @@ public class Es_10 {
         
         System.out.print("Nome do funcionario: ");
         String nome = NN.nextLine();
-        System.out.print("Quantidade de horas trabalhadas: ");
-        double horas = Double.parseDouble(NN.nextLine());
-        System.out.print("Valor da hora: ");
-        double valorHora = Double.parseDouble(NN.nextLine());
+        System.out.print("Salario: ");
+        double salario = Double.parseDouble(NN.nextLine());
+        System.out.print("Vendas em R$: ");
+        double vendas = Double.parseDouble(NN.nextLine());
 
-        double valorSalario = horas * valorHora;
+        double vendasSalario = vendas + (vendas*.015);
 
-        System.out.printf("O funcionario %S trabalhou %.0f horas por R$%.2f a hora e deve receber R$%.2f ", nome, horas, valorHora, valorSalario);
+        System.out.printf("O funcionario %S deve receber R$%.2f ", nome, vendasSalario);
         System.out.println("");
     }
 }
