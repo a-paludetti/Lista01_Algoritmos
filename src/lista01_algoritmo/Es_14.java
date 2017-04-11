@@ -11,22 +11,23 @@ import java.util.Scanner;
  *
  * @author aline.poliveira3
  */
-public class Es_12 {
+public class Es_14 {
     public static void main(String[] args) {
         Scanner NN = new Scanner(System.in);
         
-        System.out.print("Digite o Lado do Quadrado: ");
-        double L = NN.nextDouble();
-        System.out.print("Digite o Raio do circulo: ");
-        double R = NN.nextDouble();
+        System.out.print("Número 1: ");
+        double N1 = NN.nextDouble();
+        System.out.print("Número 2: ");
+        double N2 = NN.nextDouble();
+        double N3 = 0;
         
-        double areaL = Math.pow(L, 2);
-        double areaR = Math.PI * Math.pow(R,2);
-        
-        if (areaL<areaR){
-            System.out.println("Círculo");
+        if (N1 > N2){
+            N3 = N1/N2;
+            System.out.println(N3);
         } else {
-            System.out.println("Quadrado");
+            N3 = N2/N1;
+            System.out.println(N3);
         }
     }
+   
 }
