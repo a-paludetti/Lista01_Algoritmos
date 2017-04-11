@@ -15,17 +15,9 @@ public class Es_06 {
 
     public static void main(String[] args) {
         Scanner NN = new Scanner(System.in);
-
-        System.out.print("Número 01: ");
-        double A = NN.nextDouble();
-        System.out.print("Número 02: ");
-        double B = NN.nextDouble();
-        System.out.print("Número 03: ");
-        double C = NN.nextDouble();
-
         double n3;
 
-        System.out.print("Escolha:\n"
+        System.out.println("Escolha:\n"
                 + "A -  a área do triângulo retângulo;\n"
                 + "B -  a área do círculo;\n"
                 + "C -  a área do trapézio;\n"
@@ -34,7 +26,14 @@ public class Es_06 {
                 + "F -  o perímetro do retângulo.");
         String escolha = NN.nextLine();
 
-        switch (escolha) {
+        System.out.print("Número 01: ");
+        double A = NN.nextDouble();
+        System.out.print("Número 02: ");
+        double B = NN.nextDouble();
+        System.out.print("Número 03: ");
+        double C = NN.nextDouble();
+
+        switch (escolha.toUpperCase()) {
             case "A":
                 n3 = (A * C) / 2;
                 System.out.print("área do triangulo: " + n3);
@@ -59,7 +58,9 @@ public class Es_06 {
                 n3 = (A * 2) + (B * 2);
                 System.out.print("perímetro do retangulo: " + n3);
                 break;
+            default:
+                System.out.println("opção inválida");
+                break;
         }
-
     }
 }
